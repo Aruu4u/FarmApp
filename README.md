@@ -4,7 +4,7 @@ Farm App is an Android application for farmers that combines crop prediction, so
 
 ## Screenshots
 
-Add screenshots to `docs/screenshots/` with the filenames below and they will render automatically on GitHub.
+
 
 | Dashboard | Crop Prediction | Disease Detection |
 | --- | --- | --- |
