@@ -76,7 +76,8 @@ Key points:
 - Uses Google Play Services Location for current location.
 - Shows a readable place name instead of raw latitude and longitude.
 - Uses WeatherAPI for weather forecasts.
-- Uses Ambee Soil API for soil health data.
+- Uses **SoilGrids** (ISRIC) for Nitrogen and Soil pH data.
+- Uses **Open-Meteo Agro** for real-time Soil Moisture and Temperature.
 - Supports translated weather and soil display through ML Kit Translate.
 
 ## Tech Stack
@@ -144,13 +145,17 @@ app/src/main/java/com/example/farmapp/
 The app uses external APIs for live weather and soil data:
 
 - Weather API: `https://api.weatherapi.com/v1/`
-- Soil API: `https://api.ambeedata.com/soil/`
+- Soil Properties (N, pH): `https://rest.isric.org/soilgrids/v2.0/properties/query`
+- Soil Moisture & Temp: `https://api.open-meteo.com/v1/forecast`
 
 API keys are currently read from:
 
 ```text
 app/src/main/java/com/example/farmapp/utils/Config.kt
 ```
+
+> [!WARNING]  
+> **DEMO PROJECT ONLY**: This repository is for demonstration purposes. The `Config.kt` file is intentionally included in the source control to simplify the setup for reviewers. For any production-grade application, you must remove `Config.kt` from version control and use secure secrets management (like `local.properties` or environment variables).
 
 For production, move API keys out of source control and load them from a secure configuration source such as `local.properties`, Gradle BuildConfig fields, or a backend proxy.
 
@@ -164,7 +169,7 @@ For production, move API keys out of source control and load them from a secure 
 app/google-services.json
 ```
 
-4. Add valid WeatherAPI and Ambee API keys in `Config.kt`.
+4. Add a valid WeatherAPI key in `Config.kt` (Soil APIs are open-access and do not require keys).
 5. Sync Gradle.
 6. Build and run the app on an Android device or emulator.
 
