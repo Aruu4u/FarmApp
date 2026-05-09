@@ -24,4 +24,22 @@
     <string name="soil_fertility" tools:ignore="MissingTranslation">Fertility : 78</string>
     <string name="no_soil_data" tools:ignore="MissingTranslation">No soil data</string>
     <string name="soil_error" tools:ignore="MissingTranslation">Error fetching soil data</string>
+    <string name="welcome_msg">Good Morning, Farmer</string>
+    <string name="weather_today">Weather Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="soil_health">Soil Health</string>
+    <string name="smart_tools">Smart Tools</string>
+    <string name="crop_prediction">Crop Prediction</string>
+    <string name="login_title">Welcome Back!</string>
+    <string name="login_subtitle">Sign in to continue</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="login_btn">Login</string>
+    <string name="register_redirect">Don\'t have an account? Register</string>
+    <string name="register_title">Create Account</string>
+    <string name="register_subtitle">Join the farming community</string>
+    <string name="full_name_hint">Full Name</string>
+    <string name="username_hint">Username</string>
+    <string name="register_btn">Register</string>
+    <string name="login_redirect">Already have an account? Login</string>
 </resources>

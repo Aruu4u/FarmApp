@@ -2,7 +2,42 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="amber_600">#D69E2E</color>
-    <color name="green_100">#DFF2E6</color>
-    <color name="green_700">#2E7D32</color>
+    
+    <!-- Primary Palette (Premium Nature Green) -->
+    <color name="primary">#1B4332</color>
+    <color name="primary_light">#2D6A4F</color>
+    <color name="primary_dark">#081C15</color>
+    <color name="accent">#FFB703</color>
+    <color name="accent_light">#FFD60A</color>
+    
+    <!-- Backgrounds -->
+    <color name="bg_surface">#F0F4F2</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="bg_card_secondary">#F8F9FA</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#081C15</color>
+    <color name="text_secondary">#495057</color>
+    <color name="text_muted">#ADB5BD</color>
+    <color name="text_white">#FFFFFF</color>
+    
+    <!-- Gradient Colors -->
+    <color name="grad_green_start">#1B4332</color>
+    <color name="grad_green_end">#40916C</color>
+    <color name="grad_blue_start">#0077B6</color>
+    <color name="grad_blue_end">#48CAE4</color>
+    <color name="grad_orange_start">#D90429</color>
+    <color name="grad_orange_end">#EF233C</color>
+    
+    <!-- Feature Colors -->
+    <color name="weather_blue">#0077B6</color>
+    <color name="soil_brown">#6C584C</color>
+    <color name="prediction_purple">#5A189A</color>
+    <color name="community_green">#52B788</color>
+    
+    <!-- Utility Colors -->
+    <color name="glass_white">#AAFFFFFF</color>
+    <color name="divider">#DEE2E6</color>
+    <color name="error">#C9184A</color>
+    <color name="success">#2D6A4F</color>
 </resources>

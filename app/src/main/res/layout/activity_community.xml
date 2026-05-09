@@ -1,70 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.view.community">
+    android:background="@color/bg_surface">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/myToolbar"
-
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#B5F094"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        app:elevation="4dp">
 
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/myToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/white"
+            app:title="Farmers Forum" />
+    </com.google.android.material.appbar.AppBarLayout>
 
-
-    <ListView
-        android:background="#FCFFFC"
-        android:layout_below="@+id/myToolbar"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:id="@+id/listview"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    </ListView>
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/inputContainer"
+            android:divider="@null"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="16dp"
+            android:clipToPadding="false"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:background="@color/white"
-        android:weightSum="10"
-        android:layout_alignParentBottom="true"
-        android:layout_height="wrap_content">
-
-
-        <EditText
-            android:layout_width="140dp"
-            android:id="@+id/msgEt"
-            android:hint="Enter Message"
-            android:textColor="#232222"
-            android:layout_weight="7"
-            android:layout_height="wrap_content">
-
-        </EditText>
-        <Button
-
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/inputContainer"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:backgroundTint="#ABEF5B"
-            android:text="SEND"
-            android:id="@+id/sendBtn"
-            />
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:elevation="12dp">
 
-        <Button
-            android:id="@+id/micBtn"
-            android:layout_width="54dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:backgroundTint="#ABEF5B"
-            android:text="🎤" />
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/divider"
+                app:strokeWidth="1dp"
+                app:cardBackgroundColor="@color/bg_card_secondary"
+                android:layout_marginEnd="12dp">
 
-    </LinearLayout>
+                <EditText
+                    android:id="@+id/msgEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Type a message..."
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="12dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_primary"
+                    android:maxLines="4"/>
+            </com.google.android.material.card.MaterialCardView>
 
-</RelativeLayout>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/micBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                app:fabSize="mini"
+                app:srcCompat="@android:drawable/ic_btn_speak_now"
+                app:backgroundTint="@color/accent"
+                app:tint="@color/white"
+                app:elevation="4dp"
+                app:borderWidth="0dp"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/sendBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="mini"
+                app:srcCompat="@android:drawable/ic_menu_send"
+                app:backgroundTint="@color/primary"
+                app:tint="@color/white"
+                app:elevation="4dp"
+                app:borderWidth="0dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

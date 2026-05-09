@@ -1,12 +1,12 @@
 {
-  "Choose Language": {"snt": "ᱥᱟᱱᱛᱟᱲᱤ", "kho": "Bhasa Chuno", "bho": "Bhasha Chuni", "mag": "Bhasha Chuni"},
-  "Location": {"snt": "ᱵᱟᱹᱨᱤ", "kho": "Sthal", "bho": "Thaan", "mag": "Sthal"},
-  "Todays Weather: ": {"snt": "ᱛᱟᱹᱲᱟ ᱣᱟᱨᱦᱮᱛ:", "kho": "Aaj ke Mausam: ", "bho": "Aaj ke Mausam: ", "mag": "Aaj ke Mausam: "},
-  "Tomorrows Weather: ": {"snt": "ᱛᱟᱹᱲᱟ ᱣᱟᱨᱦᱮᱛ ᱯᱷᱟᱹᱨ:", "kho": "Kal ke Mausam: ", "bho": "Kal ke Mausam: ", "mag": "Kal ke Mausam: "},
-  "Soil Info": {"snt": "ᱥᱚᱭᱞ ᱯᱤᱫᱤᱞᱟ", "kho": "Mitti Ki Jaankari", "bho": "Mitti ke Jaankari", "mag": "Mitti ke Jaankari"},
-  "Enter Land Area": {"snt": "ᱛᱮᱹᱞ ᱵᱟᱹᱨᱤ ᱯᱟᱹᱨᱞᱟ", "kho": "Zameen ka Area Daalein", "bho": "Zameen ka Area Daalein", "mag": "Zameen ka Area Daalein"},
-  "Enter Last 2 Crops": {"snt": "ᱛᱮᱹᱞ 2 ᱯᱷᱟᱹᱨ ᱨᱟᱹᱯ", "kho": "Pichle 2 Fasal Daalein", "bho": "Pichhla 2 Fasal", "mag": "Pichhla 2 Fasal"},
-  "Moisture": {"snt": "ᱨᱚᱢᱮᱥ", "kho": "Geelapan", "bho": "Geelapan", "mag": "Geelapan"},
-  "Temperature": {"snt": "ᱛᱮᱱᱵᱮᱨ", "kho": "Taapman", "bho": "Taapman", "mag": "Taapman"},
-  "Fertility": {"snt": "ᱵᱟᱹᱦᱟ", "kho": "Upjaaupan", "bho": "Upjaaupan", "mag": "Upjaaupan"}
+  "Choose Language": {},
+  "Location": {},
+  "Todays Weather: ": {},
+  "Tomorrows Weather: ": {},
+  "Soil Info": {},
+  "Enter Land Area": {},
+  "Enter Last 2 Crops": {},
+  "Moisture": {},
+  "Temperature": {},
+  "Fertility": {}
 }

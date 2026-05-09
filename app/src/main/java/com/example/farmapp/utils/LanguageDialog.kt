@@ -6,7 +6,7 @@ import androidx.appcompat.app.AlertDialog
 class LanguageDialog(private val activity: Activity) {
 
     fun showLanguageDialog(onSelected: (String) -> Unit) {
-        val languages = arrayOf("English", "Hindi", "Khortha", "Magahi", "Nagpuri", "Kudmali")
+        val languages = arrayOf("English", "Hindi")
 
         val builder = AlertDialog.Builder(activity)
         builder.setTitle("Choose Language")
@@ -17,10 +17,6 @@ class LanguageDialog(private val activity: Activity) {
             val selectedLang = when (which) {
                 0 -> "en"
                 1 -> "hi"
-                2 -> "kho"
-                3 -> "mag"
-                4 -> "nag"
-                5 -> "kud"
                 else -> "en"
             }
             dialogInterface.dismiss()   // dialog close karo

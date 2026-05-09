@@ -6,11 +6,18 @@ object LanguageHelper {
         val locale = Locale(lang)
         Locale.setDefault(locale)
 
-        val config = android.content.res.Configuration(context.resources.configuration)
+        val resources = context.resources
+        val config = resources.configuration
         config.setLocale(locale)
         config.setLayoutDirection(locale)
 
-        return context.createConfigurationContext(config)
+        // For newer versions
+        val updatedContext = context.createConfigurationContext(config)
+        
+        // For compatibility (sometimes needed for strings)
+        resources.updateConfiguration(config, resources.displayMetrics)
+        
+        return updatedContext
     }
 }
 
